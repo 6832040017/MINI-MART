@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>พลาญชัย มินิมาร์ท (Planchai Mini Mart) | สะดวก ซื้อ สดใหม่ 24 ชั่วโมง</title>
+  <meta name="description" content="ร้านพลาญชัย มินิมาร์ท (Planchai Mini Mart) มินิมาร์ทและร้านสะดวกซื้อครบวงจร สินค้าสดใหม่ โปรโมชันเด็ด 3 สาขาทั่วร้อยเอ็ด เปิดบริการ 24 ชม.">
+  <meta name="keywords" content="มินิมาร์ท, ร้านสะดวกซื้อ, ร้อยเอ็ด, พลาญชัย มินิมาร์ท, Mini Mart, ซื้อของสด, โปรโมชัน, 24 ชั่วโมง">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23059669'/><path d='M25 35h50l-6 32H31L25 35z' fill='none' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/><circle cx='38' cy='78' r='6' fill='%23F59E0B'/><circle cx='62' cy='78' r='6' fill='%23F59E0B'/><path d='M38 25v10M50 20v15M62 25v10' stroke='white' stroke-width='4' stroke-linecap='round'/></svg>">
+
+  <!-- Google Fonts: Prompt & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Prompt"', '"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', '"Prompt"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            },
+            accent: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          },
+          boxShadow: {
+            'glow': '0 0 25px -5px rgba(16, 185, 129, 0.3)',
+            'glow-accent': '0 0 25px -5px rgba(245, 158, 11, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+
+    /* Pulse animation badge */
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.15); opacity: 0.3; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .live-dot {
+      animation: pulse-ring 2s infinite ease-in-out;
+    }
+
+    /* Glass Effect */
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-brand-500 selection:text-white">
+
+  <!-- ================= TOP ANNOUNCEMENT BAR ================= -->
+  <div class="bg-gradient-to-r from-brand-800 via-brand-700 to-emerald-900 text-white text-xs sm:text-sm py-2 px-4 shadow-sm border-b border-brand-600/30">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
+      <!-- Announcement -->
+      <div class="flex items-center gap-2 text-center md:text-left">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-accent-500 text-slate-900 shadow">
+          <i class="fa-solid fa-bolt mr-1"></i> ดีลเด็ด
+        </span>
+        <span class="font-medium text-slate-100">
+          🎉 ซื้อครบ 200.- รับคูปองเงินสด 20.- ทันที! | มีบริการเดลิเวอรีส่งด่วนใน 30 นาที 🛵
+        </span>
+      </div>
+
+      <!-- Quick contacts & Live Clock -->
+      <div class="flex items-center gap-4 text-xs text-slate-200">
+        <div class="flex items-center gap-1.5">
+          <i class="fa-solid fa-clock text-accent-400"></i>
+          <span>เวลาปัจจุบัน: </span>
+          <span id="current-clock" class="font-semibold text-white tracking-wider">--:--:--</span>
+        </div>
+        <div class="hidden sm:flex items-center gap-1.5">
+          <i class="fa-solid fa-phone text-brand-300"></i>
+          <a href="tel:043512888" class="hover:text-accent-400 transition">043-512-888</a>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+          </span>
+          <span class="text-emerald-200 font-medium">สาขาหลักเปิด 24 ชม.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER / NAVBAR ================= -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-slate-200/80 transition-all duration-300 shadow-sm" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-700 via-brand-600 to-brand-500 flex items-center justify-center text-white shadow-lg shadow-brand-600/30 group-hover:scale-105 transition-transform duration-300">
+            <i class="fa-solid fa-basket-shopping text-2xl text-accent-400"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900">PLANCHAI</span>
+              <span class="text-xl sm:text-2xl font-extrabold text-brand-600">MART</span>
+              <span class="hidden sm:inline-block text-[10px] font-bold uppercase tracking-wider bg-accent-500/20 text-accent-600 px-1.5 py-0.5 rounded border border-accent-400/30">24 Hours</span>
+            </div>
+            <p class="text-[11px] text-slate-500 font-medium tracking-wide">พลาญชัย มินิมาร์ท • สะดวก ซื้อ ครบ จบที่เดียว</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden lg:flex items-center gap-1 font-medium text-sm text-slate-700">
+          <a href="#home" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-brand-50/80 transition-colors font-semibold text-brand-700">หน้าแรก</a>
+          <a href="#branches" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-brand-50/80 transition-colors">สาขา & เวลาเปิด-ปิด</a>
+          <a href="#promotions" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-brand-50/80 transition-colors flex items-center gap-1.5">
+            โปรโมชัน
+            <span class="bg-rose-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full animate-bounce">HOT</span>
+          </a>
+          <a href="#products" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-brand-50/80 transition-colors">สินค้ายอดนิยม</a>
+          <a href="#services" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-brand-50/80 transition-colors">บริการ</a>
+          <a href="#contact" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-brand-50/80 transition-colors">ติดต่อเรา</a>
+        </nav>
+
+        <!-- Right Side Actions -->
+        <div class="flex items-center gap-3">
+          <!-- Quick Call Button (Desktop) -->
+          <a href="tel:043512888" class="hidden sm:inline-flex items-center gap-2 text-xs font-semibold px-3.5 py-2.5 rounded-xl border border-slate-200 text-slate-700 hover:border-brand-500 hover:text-brand-600 hover:bg-brand-50/50 transition">
+            <i class="fa-solid fa-phone text-brand-600"></i>
+            <span>โทรสั่งสินค้า</span>
+          </a>
+
+          <!-- Cart Drawer Button -->
+          <button id="open-cart-btn" class="relative flex items-center justify-center w-11 h-11 rounded-xl bg-slate-100 hover:bg-brand-50 text-slate-700 hover:text-brand-600 border border-slate-200/80 hover:border-brand-300 transition shadow-sm">
+            <i class="fa-solid fa-cart-shopping text-base"></i>
+            <span id="cart-count-badge" class="absolute -top-1.5 -right-1.5 bg-gradient-to-r from-accent-500 to-orange-500 text-slate-900 text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white shadow">
+              0
+            </span>
+          </button>
+
+          <!-- Branch Finder CTA -->
+          <a href="#branches" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-xl shadow-md shadow-brand-600/25 hover:shadow-lg hover:shadow-brand-600/35 transition transform active:scale-95">
+            <i class="fa-solid fa-location-dot text-accent-400"></i>
+            <span>เช็ค 3 สาขาใกล้คุณ</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobile-menu-btn" aria-label="เมนู" class="lg:hidden flex items-center justify-center w-11 h-11 rounded-xl bg-slate-100 text-slate-700 hover:text-brand-600 hover:bg-brand-50 border border-slate-200 transition">
+            <i class="fa-solid fa-bars text-lg" id="menu-icon"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200/80 py-4 px-2 space-y-1 bg-white/95 backdrop-blur-md rounded-b-2xl shadow-xl">
+        <a href="#home" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">หน้าแรก</a>
+        <a href="#branches" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">ที่อยู่ 3 สาขา & เวลาเปิด-ปิด</a>
+        <a href="#promotions" class="mobile-nav-link flex items-center justify-between px-4 py-2.5 rounded-xl font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">
+          <span>โปรโมชันสุดคุ้ม</span>
+          <span class="bg-rose-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">HOT</span>
+        </a>
+        <a href="#products" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">สินค้ายอดนิยม</a>
+        <a href="#services" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">บริการพิเศษ</a>
+        <a href="#contact" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">ช่องทางติดต่อเรา</a>
+        <div class="pt-3 border-t border-slate-100 flex flex-col gap-2 px-2">
+          <a href="tel:043512888" class="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-brand-50 text-brand-700 font-semibold text-sm">
+            <i class="fa-solid fa-phone"></i> โทร: 043-512-888 (สาขา 1)
+          </a>
+          <a href="https://line.me" target="_blank" class="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-[#06C755] text-white font-semibold text-sm">
+            <i class="fa-brands fa-line text-lg"></i> แอด LINE: @planchaimart
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home" class="relative overflow-hidden pt-8 pb-16 md:pt-16 md:pb-24 bg-gradient-to-b from-brand-50/50 via-slate-50 to-slate-50">
+    <!-- Decorative background blobs -->
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-300/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -left-40 w-96 h-96 bg-accent-400/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-brand-200/80 shadow-sm text-xs sm:text-sm font-semibold text-brand-800">
+            <span class="flex h-2 w-2 rounded-full bg-brand-500"></span>
+            <span>ร้านสะดวกซื้อพลาญชัย มินิมาร์ท (Planchai Mini Mart)</span>
+            <span class="bg-brand-100 text-brand-700 text-[11px] px-2 py-0.5 rounded-full font-bold">3 สาขาร้อยเอ็ด</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            สะดวก ซื้อ สดใหม่ <br class="hidden sm:inline">
+            <span class="bg-gradient-to-r from-brand-600 via-emerald-600 to-accent-600 bg-clip-text text-transparent">
+              ครบวงจร 24 ชั่วโมง
+            </span> <br>
+            ใกล้บ้านคุณทุกวัน
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            สัมผัสประสบการณ์มินิมาร์ทยุคใหม่ สินค้าคุณภาพสดใหม่ อาหารพร้อมทาน กาแฟสด เบเกอรี่ ของใช้จำเป็น และโปรโมชันสุดคุ้มตลอดทั้งปี พร้อมบริการจัดส่งด่วนถึงหน้าบ้านคุณ
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <a href="#promotions" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white font-semibold px-6 py-3.5 rounded-2xl shadow-lg shadow-brand-600/30 hover:shadow-xl hover:shadow-brand-600/40 transition transform active:scale-95 text-base">
+              <i class="fa-solid fa-tags text-accent-400"></i>
+              <span>ดูโปรโมชันสุดพิเศษ</span>
+            </a>
+            <a href="#branches" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 font-semibold px-6 py-3.5 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-400 hover:text-brand-700 transition transform active:scale-95 text-base">
+              <i class="fa-solid fa-clock text-brand-600"></i>
+              <span>ดูที่อยู่ & เวลาเปิด-ปิด 3 สาขา</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges / Quick Highlights -->
+          <div class="pt-6 border-t border-slate-200/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-brand-100/70 text-brand-700 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-500 font-medium">ครอบคลุม</p>
+                <p class="text-sm font-bold text-slate-900">3 สาขาเมืองร้อยเอ็ด</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-100/70 text-amber-700 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-500 font-medium">เปิดบริการ</p>
+                <p class="text-sm font-bold text-slate-900">24 ชั่วโมง (สาขา 1)</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-100/70 text-blue-700 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-motorcycle"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-500 font-medium">จัดส่งด่วน</p>
+                <p class="text-sm font-bold text-slate-900">ถึงใน 30 นาที</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-purple-100/70 text-purple-700 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-shield-heart"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-500 font-medium">คุณภาพ</p>
+                <p class="text-sm font-bold text-slate-900">สดใหม่ มั่นใจ 100%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual -->
+        <div class="lg:col-span-5 relative">
+          <!-- Main Hero Card -->
+          <div class="relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden shadow-2xl bg-white border border-slate-200/80 group">
+            <div class="relative h-72 sm:h-80 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=1000&q=80" 
+                   alt="Planchai Mini Mart Store Interior" 
+                   class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/30 to-transparent"></div>
+              
+              <!-- Floating Pill on Image -->
+              <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3.5 py-1.5 rounded-xl shadow text-xs font-bold text-brand-700 flex items-center gap-1.5">
+                <i class="fa-solid fa-award text-accent-500"></i> มินิมาร์ทยอดนิยมอันดับ 1
+              </div>
+
+              <!-- Floating Live Status -->
+              <div class="absolute top-4 right-4 bg-emerald-600 text-white px-3 py-1.5 rounded-xl shadow-lg text-xs font-bold flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                <span>OPEN NOW</span>
+              </div>
+
+              <!-- Text overlay on image -->
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <p class="text-xs text-slate-300 font-medium">สาขาหลัก หน้า วท.พลาญชัย</p>
+                <h3 class="text-xl font-bold">พลาญชัย มินิมาร์ท (Planchai Mart)</h3>
+                <p class="text-xs text-slate-200 flex items-center gap-2 mt-1">
+                  <span><i class="fa-solid fa-map-pin text-accent-400"></i> ถ.เทวาภิบาล อ.เมือง จ.ร้อยเอ็ด</span>
+                  <span>•</span>
+                  <span><i class="fa-solid fa-clock text-accent-400"></i> 24 ชม.</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Card Bottom Highlights -->
+            <div class="p-5 bg-gradient-to-b from-white to-slate-50">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <div class="flex items-center gap-2">
+                  <div class="w-8 h-8 rounded-lg bg-accent-100 text-accent-600 flex items-center justify-center font-bold text-xs">
+                    %
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-400 block font-medium">โปรเด็ดวันนี้</span>
+                    <span class="text-sm font-bold text-slate-800">เครื่องดื่ม 1 แถม 1 & อาหารกล่อง 39.-</span>
+                  </div>
+                </div>
+                <a href="#promotions" class="text-xs font-semibold text-brand-600 hover:text-brand-700">ดูทั้งหมด &rarr;</a>
+              </div>
+
+              <div class="pt-3 flex items-center justify-between text-xs text-slate-500">
+                <span class="flex items-center gap-1"><i class="fa-solid fa-wifi text-brand-600"></i> ฟรี Wi-Fi</span>
+                <span class="flex items-center gap-1"><i class="fa-solid fa-credit-card text-brand-600"></i> สแกนจ่าย/บัตร</span>
+                <span class="flex items-center gap-1"><i class="fa-solid fa-square-parking text-brand-600"></i> ที่จอดรถกว้าง</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Decorative Card -->
+          <div class="hidden sm:flex absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/80 items-center gap-3.5 z-10">
+            <div class="w-12 h-12 rounded-xl bg-accent-500/10 text-accent-600 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">บริการส่งด่วน</p>
+              <p class="text-sm font-bold text-slate-900">สั่งผ่าน LINE ส่งถึงบ้าน</p>
+              <p class="text-[11px] text-brand-600 font-medium">โทร: 043-512-888 หรือแอดไลน์</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 1: 3 BRANCHES & OPERATING HOURS (ที่อยู่ 3 สาขา & เวลาเปิด-ปิด) ================= -->
+  <section id="branches" class="py-20 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-200 text-brand-700 text-xs font-bold uppercase tracking-wider mb-3">
+          <i class="fa-solid fa-location-dot"></i> 3 สาขาครอบคลุมใจกลางเมืองร้อยเอ็ด
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          สาขาและเวลาเปิด-ปิด บริการ
+        </h2>
+        <p class="mt-3 text-base text-slate-600 font-normal">
+          พลาญชัย มินิมาร์ท พร้อมให้บริการคุณทั้ง 3 สาขา ด้วยสินค้าสดใหม่ครบครัน สะดวกที่ไหน แวะไปได้เลย!
+        </p>
+      </div>
+
+      <!-- Live Status Banner -->
+      <div class="mb-10 bg-gradient-to-r from-slate-900 via-slate-800 to-brand-950 text-white rounded-2xl p-4 sm:p-6 shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-4 text-center md:text-left">
+          <div class="w-12 h-12 rounded-2xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-2xl shrink-0">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-base sm:text-lg flex items-center justify-center md:justify-start gap-2">
+              <span>สถานะการเปิดให้บริการตามเวลาจริง</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-brand-500 text-slate-950">LIVE</span>
+            </h4>
+            <p class="text-xs sm:text-sm text-slate-300">ระบบจะตรวจสอบเวลาเปิด-ปิดอัตโนมัติตามเวลาปัจจุบันของคุณ</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-3 text-xs font-medium">
+          <div class="bg-slate-800/80 px-3.5 py-2 rounded-xl border border-slate-700 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>สาขา 1 (พลาญชัย): <strong class="text-emerald-400">เปิด 24 ชม.</strong></span>
+          </div>
+          <div class="bg-slate-800/80 px-3.5 py-2 rounded-xl border border-slate-700 flex items-center gap-2">
+            <span id="branch2-live-indicator" class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+            <span>สาขา 2 (บายพาส): <strong id="branch2-live-text" class="text-emerald-400">เปิดบริการ</strong></span>
+          </div>
+          <div class="bg-slate-800/80 px-3.5 py-2 rounded-xl border border-slate-700 flex items-center gap-2">
+            <span id="branch3-live-indicator" class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+            <span>สาขา 3 (บึงพลาญชัย): <strong id="branch3-live-text" class="text-emerald-400">เปิดบริการ</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Branch Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- ================= BRANCH 1 ================= -->
+        <div class="bg-slate-50 rounded-3xl border-2 border-brand-500 shadow-xl overflow-hidden flex flex-col justify-between relative group hover:-translate-y-1 transition duration-300">
+          <!-- Featured Badge -->
+          <div class="absolute top-4 right-4 z-10 bg-brand-600 text-white text-[11px] font-extrabold px-3 py-1 rounded-full shadow-md flex items-center gap-1.5">
+            <i class="fa-solid fa-star text-accent-400"></i> สาขาหลัก (สำนักงาน)
+          </div>
+
+          <!-- Image -->
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=80" 
+                 alt="สาขาหน้าวิทยาลัยพลาญชัย" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+            
+            <div class="absolute bottom-3 left-4 text-white">
+              <span class="bg-accent-500 text-slate-900 text-[10px] font-black px-2 py-0.5 rounded tracking-wide">สาขาที่ 1</span>
+              <h3 class="text-lg font-bold">สาขาหน้าวิทยาลัยเทคโนโลยีพลาญชัย</h3>
+            </div>
+          </div>
+
+          <!-- Branch Body -->
+          <div class="p-6 space-y-4 flex-1">
+            
+            <!-- Operating Hours Box (เด่นชัด) -->
+            <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-3.5 flex items-start gap-3">
+              <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0 text-base shadow-sm">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-emerald-900 uppercase">เวลาเปิด - ปิด</span>
+                  <span class="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 bg-white px-2 py-0.5 rounded-full border border-emerald-300">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> เปิด 24 ชม.
+                  </span>
+                </div>
+                <p class="text-base font-extrabold text-emerald-800 mt-0.5">เปิดบริการ 24 ชั่วโมง</p>
+                <p class="text-[11px] text-emerald-700 font-medium">เปิดทุกวัน ตลอด 365 วัน ไม่มีวันหยุด</p>
+              </div>
+            </div>
+
+            <!-- Address (ที่อยู่ครบถ้วน) -->
+            <div class="space-y-1.5">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-map-location-dot text-brand-600"></i>
+                <span>ที่อยู่สาขา</span>
+              </div>
+              <p class="text-sm font-semibold text-slate-800 leading-snug">
+                เลขที่ 168 หมู่ 2 ถนนเทวาภิบาล ตำบลรอบเมือง อำเภอเมือง จังหวัดร้อยเอ็ด 45000
+              </p>
+              <p class="text-xs text-slate-500">
+                <i class="fa-solid fa-circle-info text-accent-500 mr-1"></i>จุดสังเกต: ฝั่งตรงข้ามประตูหน้าวิทยาลัยเทคโนโลยีพลาญชัยร้อยเอ็ด
+              </p>
+            </div>
+
+            <!-- Phone & Contacts -->
+            <div class="space-y-1.5 pt-1">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-phone text-brand-600"></i>
+                <span>เบอร์โทรศัพท์</span>
+              </div>
+              <div class="flex flex-wrap items-center gap-2">
+                <a href="tel:043512888" class="text-xs font-bold text-brand-700 hover:text-brand-800 bg-brand-100/70 hover:bg-brand-100 px-3 py-1.5 rounded-xl transition">
+                  <i class="fa-solid fa-phone-volume mr-1"></i>043-512-888
+                </a>
+                <a href="tel:0891112233" class="text-xs font-bold text-brand-700 hover:text-brand-800 bg-brand-100/70 hover:bg-brand-100 px-3 py-1.5 rounded-xl transition">
+                  <i class="fa-solid fa-mobile-screen mr-1"></i>089-111-2233
+                </a>
+              </div>
+            </div>
+
+            <!-- Services Available -->
+            <div class="pt-2 border-t border-slate-200">
+              <div class="text-[11px] font-bold text-slate-400 uppercase mb-2">บริการประจำสาขา:</div>
+              <div class="flex flex-wrap gap-1.5 text-xs text-slate-600">
+                <span class="bg-white border border-slate-200 px-2 py-0.5 rounded-lg">ATM 3 ธนาคาร</span>
+                <span class="bg-white border border-slate-200 px-2 py-0.5 rounded-lg">มุมกาแฟสด Fresh Cafe</span>
+                <span class="bg-white border border-slate-200 px-2 py-0.5 rounded-lg">จุดส่งพัสดุ Flash/Kerry</span>
+                <span class="bg-white border border-slate-200 px-2 py-0.5 rounded-lg">Free Wi-Fi</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Card Actions -->
+          <div class="p-4 bg-white border-t border-slate-200 flex items-center gap-2">
+            <button onclick="copyAddress('เลขที่ 168 หมู่ 2 ถนนเทวาภิบาล ต.รอบเมือง อ.เมือง จ.ร้อยเอ็ด 45000 (ตรงข้ามวิทยาลัยพลาญชัย)')" class="flex-1 text-xs font-semibold py-2.5 px-3 rounded-xl border border-slate-200 hover:border-brand-500 hover:bg-brand-50 text-slate-700 hover:text-brand-700 transition flex items-center justify-center gap-1.5">
+              <i class="fa-regular fa-copy"></i>
+              <span>คัดลอกที่อยู่</span>
+            </button>
+            <a href="https://maps.google.com/?q=วิทยาลัยเทคโนโลยีพณิชยการพลาญชัยร้อยเอ็ด" target="_blank" class="flex-1 text-xs font-bold py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-location-arrow"></i>
+              <span>เปิดแผนที่ Google</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= BRANCH 2 ================= -->
+        <div class="bg-slate-50 rounded-3xl border border-slate-200 hover:border-brand-400 shadow-md hover:shadow-xl overflow-hidden flex flex-col justify-between group hover:-translate-y-1 transition duration-300">
+          
+          <!-- Image -->
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80" 
+                 alt="สาขาบายพาส โรบินสัน ร้อยเอ็ด" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+            
+            <div class="absolute bottom-3 left-4 text-white">
+              <span class="bg-accent-500 text-slate-900 text-[10px] font-black px-2 py-0.5 rounded tracking-wide">สาขาที่ 2</span>
+              <h3 class="text-lg font-bold">สาขาบายพาส - โรบินสัน ร้อยเอ็ด</h3>
+            </div>
+          </div>
+
+          <!-- Branch Body -->
+          <div class="p-6 space-y-4 flex-1">
+            
+            <!-- Operating Hours Box (เด่นชัด) -->
+            <div class="bg-blue-50 border border-blue-200 rounded-2xl p-3.5 flex items-start gap-3">
+              <div class="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 text-base shadow-sm">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-blue-900 uppercase">เวลาเปิด - ปิด</span>
+                  <span id="badge-branch-2" class="inline-flex items-center gap-1 text-[11px] font-bold text-blue-700 bg-white px-2 py-0.5 rounded-full border border-blue-300">
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> กำลังเปิดบริการ
+                  </span>
+                </div>
+                <p class="text-base font-extrabold text-blue-900 mt-0.5">06:00 น. - 24:00 น.</p>
+                <p class="text-[11px] text-blue-700 font-medium">เปิดบริการทุกวัน (จันทร์ - อาทิตย์)</p>
+              </div>
+            </div>
+
+            <!-- Address (ที่อยู่ครบถ้วน) -->
+            <div class="space-y-1.5">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-map-location-dot text-brand-600"></i>
+                <span>ที่อยู่สาขา</span>
+              </div>
+              <p class="text-sm font-semibold text-slate-800 leading-snug">
+                เลขที่ 250 ถนนเลี่ยงเมืองร้อยเอ็ด ตำบลดงลาน อำเภอเมือง จังหวัดร้อยเอ็ด 45000
+              </p>
+              <p class="text-xs text-slate-500">
+                <i class="fa-solid fa-circle-info text-accent-500 mr-1"></i>จุดสังเกต: ฝั่งขาออกมุ่งหน้าขอนแก่น ติดปั๊ม ปตท. เลี่ยงเมือง ใกล้โรบินสันร้อยเอ็ด
+              </p>
+            </div>
+
+            <!-- Phone & Contacts -->
+            <div class="space-y-1.5 pt-1">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-phone text-brand-600"></i>
+                <span>เบอร์โทรศัพท์</span>
+              </div>
+              <div class="flex flex-wrap items-center gap-2">
+                <a href="tel:043514999" class="text-xs font-bold text-brand-700 hover:text-brand-800 bg-brand-100/70 hover:bg-brand-100 px-3 py-1.5 rounded-xl transition">
+                  <i class="fa-solid fa-phone-volume mr-1"></i>043-514-999
+                </a>
+                <a href="tel:0892223344" class="text-xs font-bold text-brand-700 hover:text-brand-800 bg-brand-100/70 hover:bg-brand-100 px-3 py-1.5 rounded-xl transition">
+                  <i class="fa-solid fa-mobile-screen mr-1"></i>089-222-3344
+                </a>
+              </div>
+            </div>
+
+            <!-- Services Available -->
+            <div class="pt-2 border-t border-slate-200">
+              <div class="text-[11px] font-bold text-slate-400 uppercase mb-2">บริการประจำสาขา:</div>
+              <div class="flex flex-wrap gap-1.5 text-xs text-slate-600">
+                <span class="bg-white border border-slate-200 px-2 py-0.5 rounded-lg">จุดชาร์จรถยนต์ไฟฟ้า EV</span>
+                <span class="bg-white border border-slate-200 px-2 py-0.5 rounded-lg">สลัดบาร์ & เบเกอรี่สด</span>
+                <span class="bg-white border border-slate-200 px-2 py-0.5 rounded-lg">ที่จอดรถมากกว่า 20 คัน</span>
+                <span class="bg-white border border-slate-200 px-2 py-0.5 rounded-lg">เดลิเวอรีส่งบ้าน</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Card Actions -->
+          <div class="p-4 bg-white border-t border-slate-200 flex items-center gap-2">
+            <button onclick="copyAddress('เลขที่ 250 ถนนเลี่ยงเมืองร้อยเอ็ด ต.ดงลาน อ.เมือง จ.ร้อยเอ็ด 45000 (ใกล้โรบินสัน)')" class="flex-1 text-xs font-semibold py-2.5 px-3 rounded-xl border border-slate-200 hover:border-brand-500 hover:bg-brand-50 text-slate-700 hover:text-brand-700 transition flex items-center justify-center gap-1.5">
+              <i class="fa-regular fa-copy"></i>
+              <span>คัดลอกที่อยู่</span>
+            </button>
+            <a href="https://maps.google.com/?q=Robinson+Roi+Et" target="_blank" class="flex-1 text-xs font-bold py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-brand-600 text-white transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-location-arrow"></i>
+              <span>เปิดแผนที่ Google</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= BRANCH 3 ================= -->
+        <div class="bg-slate-50 rounded-3xl border border-slate-200 hover:border-brand-400 shadow-md hover:shadow-xl overflow-hidden flex flex-col justify-between group hover:-translate-y-1 transition duration-300">
+          
+          <!-- Image -->
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d?auto=format&fit=crop&w=700&q=80" 
+                 alt="สาขาบึงพลาญชัย แลนด์มาร์ก" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+            
+            <div class="absolute bottom-3 left-4 text-white">
+              <span class="bg-accent-500 text-slate-900 text-[10px] font-black px-2 py-0.5 rounded tracking-wide">สาขาที่ 3</span>
+              <h3 class="text-lg font-bold">สาขาบึงพลาญชัย แลนด์มาร์ก</h3>
+            </div>
+          </div>
+
+          <!-- Branch Body -->
+          <div class="p-6 space-y-4 flex-1">
+            
+            <!-- Operating Hours Box (เด่นชัด) -->
+            <div class="bg-amber-50 border border-amber-200 rounded-2xl p-3.5 flex items-start gap-3">
+              <div class="w-9 h-9 rounded-xl bg-amber-600 text-white flex items-center justify-center shrink-0 text-base shadow-sm">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-amber-900 uppercase">เวลาเปิด - ปิด</span>
+                  <span id="badge-branch-3" class="inline-flex items-center gap-1 text-[11px] font-bold text-amber-800 bg-white px-2 py-0.5 rounded-full border border-amber-300">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> กำลังเปิดบริการ
+                  </span>
+                </div>
+                <p class="text-base font-extrabold text-amber-900 mt-0.5">05:00 น. - 23:00 น.</p>
+                <p class="text-[11px] text-amber-800 font-medium">เปิดบริการทุกวัน (เหมาะกับคนวิ่งออกกำลังกายยามเช้า)</p>
+              </div>
+            </div>
+
+            <!-- Address (ที่อยู่ครบถ้วน) -->
+            <div class="space-y-1.5">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-map-location-dot text-brand-600"></i>
+                <span>ที่อยู่สาขา</span>
+              </div>
+              <p class="text-sm font-semibold text-slate-800 leading-snug">
+                เลขที่ 88 ถนนหัตถสาร ตำบลในเมือง อำเภอเมือง จังหวัดร้อยเอ็ด 45000
+              </p>
+              <p class="text-xs text-slate-500">
+                <i class="fa-solid fa-circle-info text-accent-500 mr-1"></i>จุดสังเกต: ตรงข้ามซุ้มประตูทางเข้าสวนสมเด็จพระศรีนครินทร์ (บึงพลาญชัย)
+              </p>
+            </div>
+
+            <!-- Phone & Contacts -->
+            <div class="space-y-1.5 pt-1">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-phone text-brand-600"></i>
+                <span>เบอร์โทรศัพท์</span>
+              </div>
+              <div class="flex flex-wrap items-center gap-2">
+                <a href="tel:043516777" class="text-xs font-bold text-brand-700 hover:text-brand-800 bg-brand-100/70 hover:bg-brand-100 px-3 py-1.5 rounded-xl transition">
+                  <i class="fa-solid fa-phone-volume mr-1"></i>043-516-777
+                </a>
+                <a href="tel:0893334455" class="text-xs font-bold text-brand-700 hover:text-brand-800 bg-brand-100/70 hover:bg-brand-100 px-3 py-1.5 rounded-xl transition">
+                  <i class="fa-solid fa-mobile-screen mr-1"></i>089-333-4455
+                </a>
+              </div>
+            </div>
+
+            <!-- Services Available -->
+            <div class="pt-2 border-t border-slate-200">
+              <div class="text-[11px] font-bold text-slate-400 uppercase mb-2">บริการประจำสาขา:</div>
+              <div class="flex flex-wrap gap-1.5 text-xs text-slate-600">
+                <span class="bg-white border border-slate-200 px-2 py-0.5 rounded-lg">โซนนั่งพักชมวิวบึง</span>
+                <span class="bg-white border border-slate-200 px-2 py-0.5 rounded-lg">ไอศกรีมซอฟต์เสิร์ฟ</span>
+                <span class="bg-white border border-slate-200 px-2 py-0.5 rounded-lg">ไมโครเวฟ/น้ำร้อนฟรี</span>
+                <span class="bg-white border border-slate-200 px-2 py-0.5 rounded-lg">จุดชาร์จมือถือ</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Card Actions -->
+          <div class="p-4 bg-white border-t border-slate-200 flex items-center gap-2">
+            <button onclick="copyAddress('เลขที่ 88 ถนนหัตถสาร ต.ในเมือง อ.เมือง จ.ร้อยเอ็ด 45000 (ตรงข้ามประตูบึงพลาญชัย)')" class="flex-1 text-xs font-semibold py-2.5 px-3 rounded-xl border border-slate-200 hover:border-brand-500 hover:bg-brand-50 text-slate-700 hover:text-brand-700 transition flex items-center justify-center gap-1.5">
+              <i class="fa-regular fa-copy"></i>
+              <span>คัดลอกที่อยู่</span>
+            </button>
+            <a href="https://maps.google.com/?q=Bueng+Phalan+Chai" target="_blank" class="flex-1 text-xs font-bold py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-brand-600 text-white transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-location-arrow"></i>
+              <span>เปิดแผนที่ Google</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Summary Table (เปรียบเทียบเวลาเปิด-ปิดทั้ง 3 สาขา) -->
+      <div class="mt-14 bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-8 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center">
+            <i class="fa-solid fa-table-list"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">สรุปตารางเวลาเปิด-ปิดและเบอร์ติดต่อ ทั้ง 3 สาขา</h3>
+        </div>
+        
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm border-collapse">
+            <thead>
+              <tr class="border-b border-slate-200 text-xs font-bold text-slate-500 uppercase bg-slate-100/70">
+                <th class="py-3.5 px-4 rounded-l-xl">สาขา</th>
+                <th class="py-3.5 px-4">ที่ตั้ง / ทำเล</th>
+                <th class="py-3.5 px-4">เวลาเปิด - ปิด</th>
+                <th class="py-3.5 px-4">เบอร์โทรศัพท์ติดต่อ</th>
+                <th class="py-3.5 px-4 rounded-r-xl">สถานะ</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200/70 font-medium">
+              <tr class="hover:bg-brand-50/40 transition">
+                <td class="py-3.5 px-4 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-md bg-brand-600 text-white text-xs flex items-center justify-center font-bold">1</span>
+                  สาขาหน้าวิทยาลัยพลาญชัย
+                </td>
+                <td class="py-3.5 px-4 text-slate-600">168 ม.2 ถ.เทวาภิบาล ต.รอบเมือง (หน้า วท.พลาญชัย)</td>
+                <td class="py-3.5 px-4 font-bold text-emerald-600">เปิด 24 ชั่วโมง (ทุกวัน)</td>
+                <td class="py-3.5 px-4 text-slate-700">043-512-888, 089-111-2233</td>
+                <td class="py-3.5 px-4">
+                  <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> เปิดบริการ 24 ชม.
+                  </span>
+                </td>
+              </tr>
+              <tr class="hover:bg-brand-50/40 transition">
+                <td class="py-3.5 px-4 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-md bg-blue-600 text-white text-xs flex items-center justify-center font-bold">2</span>
+                  สาขาบายพาส - โรบินสัน
+                </td>
+                <td class="py-3.5 px-4 text-slate-600">250 ถ.เลี่ยงเมืองร้อยเอ็ด ต.ดงลาน (ใกล้โรบินสัน)</td>
+                <td class="py-3.5 px-4 font-bold text-blue-700">06:00 - 24:00 น.</td>
+                <td class="py-3.5 px-4 text-slate-700">043-514-999, 089-222-3344</td>
+                <td class="py-3.5 px-4">
+                  <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800">
+                    <span class="w-2 h-2 rounded-full bg-blue-500"></span> บริการ 06:00-24:00
+                  </span>
+                </td>
+              </tr>
+              <tr class="hover:bg-brand-50/40 transition">
+                <td class="py-3.5 px-4 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-md bg-amber-600 text-white text-xs flex items-center justify-center font-bold">3</span>
+                  สาขาบึงพลาญชัย แลนด์มาร์ก
+                </td>
+                <td class="py-3.5 px-4 text-slate-600">88 ถ.หัตถสาร ต.ในเมือง (ตรงข้ามประตูบึงพลาญชัย)</td>
+                <td class="py-3.5 px-4 font-bold text-amber-700">05:00 - 23:00 น.</td>
+                <td class="py-3.5 px-4 text-slate-700">043-516-777, 089-333-4455</td>
+                <td class="py-3.5 px-4">
+                  <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800">
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span> บริการ 05:00-23:00
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: PROMOTIONS (โปรโมชันประจำเดือน) ================= -->
+  <section id="promotions" class="py-20 bg-slate-100/70 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header with Flash Sale Countdown -->
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-6 mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-xs font-bold uppercase tracking-wider mb-2">
+            <i class="fa-solid fa-fire text-rose-500"></i> โปรโมชันพิเศษสุดคุ้มแห่งเดือน
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            โปรโมชันประจำสัปดาห์ & Flash Sale
+          </h2>
+          <p class="mt-2 text-slate-600">สินค้าราคาพิเศษ ทั้ง 3 สาขา และสั่งออนไลน์ผ่านช่องทางเดลิเวอรี</p>
+        </div>
+
+        <!-- Countdown Timer Card -->
+        <div class="bg-gradient-to-br from-rose-600 via-rose-700 to-red-800 text-white p-4 sm:p-5 rounded-2xl shadow-xl flex items-center gap-4 border border-rose-500/40">
+          <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-2xl">
+            <i class="fa-solid fa-stopwatch animate-pulse"></i>
+          </div>
+          <div>
+            <span class="text-xs font-semibold text-rose-200 block uppercase tracking-wider">⏳ หมดเขต Flash Sale ในอีก</span>
+            <div class="flex items-center gap-2 mt-1">
+              <div class="text-center">
+                <span id="countdown-days" class="text-xl sm:text-2xl font-black bg-black/30 px-2 py-0.5 rounded-md font-mono">03</span>
+                <span class="text-[10px] text-rose-200 block">วัน</span>
+              </div>
+              <span class="font-bold">:</span>
+              <div class="text-center">
+                <span id="countdown-hours" class="text-xl sm:text-2xl font-black bg-black/30 px-2 py-0.5 rounded-md font-mono">14</span>
+                <span class="text-[10px] text-rose-200 block">ชม.</span>
+              </div>
+              <span class="font-bold">:</span>
+              <div class="text-center">
+                <span id="countdown-mins" class="text-xl sm:text-2xl font-black bg-black/30 px-2 py-0.5 rounded-md font-mono">28</span>
+                <span class="text-[10px] text-rose-200 block">นาที</span>
+              </div>
+              <span class="font-bold">:</span>
+              <div class="text-center">
+                <span id="countdown-secs" class="text-xl sm:text-2xl font-black bg-black/30 px-2 py-0.5 rounded-md font-mono">45</span>
+                <span class="text-[10px] text-rose-200 block">วินาที</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Promotion Category Filter Tabs -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
+        <button onclick="filterPromos('all')" class="promo-tab-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-brand-600 text-white shadow-sm transition">
+          ทั้งหมด (6)
+        </button>
+        <button onclick="filterPromos('bogo')" class="promo-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-200/70 border border-slate-200 transition">
+          ซื้อ 1 แถม 1
+        </button>
+        <button onclick="filterPromos('discount')" class="promo-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-200/70 border border-slate-200 transition">
+          ลดสูงสุด 50%
+        </button>
+        <button onclick="filterPromos('meal')" class="promo-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-200/70 border border-slate-200 transition">
+          เซ็ตอิ่มคุ้ม 39.-
+        </button>
+        <button onclick="filterPromos('member')" class="promo-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-200/70 border border-slate-200 transition">
+          สมาชิก Planchai Plus
+        </button>
+      </div>
+
+      <!-- Promotions Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="promo-container">
+        
+        <!-- Promo 1: BOGO -->
+        <div class="promo-item bogo bg-white rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=700&q=80" 
+                 alt="โปร ซื้อ 1 แถม 1 เครื่องดื่ม" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-rose-600 text-white text-xs font-black px-3 py-1 rounded-full shadow-md">
+              ⚡ ซื้อ 1 แถม 1 (1+1 Free)
+            </span>
+            <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-lg">
+              ทุกสาขา
+            </span>
+          </div>
+
+          <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-brand-600 mb-1">
+                <i class="fa-solid fa-mug-hot"></i> เครื่องดื่ม & ของหวาน
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 leading-snug">
+                ชาเขียวมัทฉะแท้ & นมสดพรีเมียม ซื้อ 1 แถม 1 ฟรี!
+              </h3>
+              <p class="text-xs text-slate-500 mt-1">
+                สดชื่น คลายร้อน ชงสดแก้วต่อแก้ว หรือเลือกแบบขวดพร้อมดื่ม คละรสชาติได้
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-xs text-slate-400 line-through">฿70.-</span>
+                <span class="text-xl font-extrabold text-brand-600 ml-1">฿35.-</span>
+                <span class="text-[11px] text-slate-500">/ 2 ขวด</span>
+              </div>
+              <button onclick="claimCoupon('ชาเขียว 1 แถม 1')" class="text-xs font-bold bg-brand-50 hover:bg-brand-600 text-brand-700 hover:text-white px-3.5 py-2 rounded-xl transition border border-brand-200">
+                <i class="fa-solid fa-ticket mr-1"></i> รับคูปอง
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promo 2: Discount 50% -->
+        <div class="promo-item discount bg-white rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3d5d628169b?auto=format&fit=crop&w=700&q=80" 
+                 alt="ลดสูงสุด 50% ขนมและสแน็ค" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-accent-500 text-slate-950 text-xs font-black px-3 py-1 rounded-full shadow-md">
+              🔥 ลดกระหน่ำ 50%
+            </span>
+            <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-lg">
+              เฉพาะสัปดาห์นี้
+            </span>
+          </div>
+
+          <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-accent-600 mb-1">
+                <i class="fa-solid fa-cookie-bite"></i> ขนมขบเคี้ยว & เบเกอรี่
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 leading-snug">
+                ขนมขบเคี้ยวและมันฝรั่งทอดนำเข้า ลดครึ่งราคา 50%
+              </h3>
+              <p class="text-xs text-slate-500 mt-1">
+                กรอบ อร่อย จุใจ หลากหลายรสชาติยอดนิยม เติมความสุขให้ช่วงเวลาพักผ่อน
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-xs text-slate-400 line-through">฿60.-</span>
+                <span class="text-xl font-extrabold text-accent-600 ml-1">฿30.-</span>
+                <span class="text-[11px] text-slate-500">/ ซอง</span>
+              </div>
+              <button onclick="claimCoupon('ขนมนำเข้าลด 50%')" class="text-xs font-bold bg-amber-50 hover:bg-accent-500 text-amber-800 hover:text-slate-950 px-3.5 py-2 rounded-xl transition border border-amber-200">
+                <i class="fa-solid fa-ticket mr-1"></i> รับคูปอง
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promo 3: Value Meal 39 THB -->
+        <div class="promo-item meal bg-white rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80" 
+                 alt="เซ็ตข้าวกล่องปรุงสด" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-black px-3 py-1 rounded-full shadow-md">
+              🍱 เซ็ตอิ่มคุ้ม 39 บาท
+            </span>
+            <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-lg">
+              เมนูยอดฮิต
+            </span>
+          </div>
+
+          <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-emerald-600 mb-1">
+                <i class="fa-solid fa-bowl-rice"></i> อาหารพร้อมทาน
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 leading-snug">
+                เซ็ตข้าวกะเพราหมูสับไข่ดาว + น้ำดื่ม ขนาด 600 มล.
+              </h3>
+              <p class="text-xs text-slate-500 mt-1">
+                ปรุงสด สะอาด รสชาติกลมกล่อม พร้อมบริการเวฟร้อนทันใจใน 2 นาที
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-xs text-slate-400 line-through">฿55.-</span>
+                <span class="text-xl font-extrabold text-emerald-600 ml-1">฿39.-</span>
+                <span class="text-[11px] text-slate-500">/ เซ็ต</span>
+              </div>
+              <button onclick="claimCoupon('เซ็ตข้าวกล่อง 39.-')" class="text-xs font-bold bg-emerald-50 hover:bg-emerald-600 text-emerald-800 hover:text-white px-3.5 py-2 rounded-xl transition border border-emerald-200">
+                <i class="fa-solid fa-ticket mr-1"></i> รับคูปอง
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promo 4: Member Special -->
+        <div class="promo-item member bg-white rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=700&q=80" 
+                 alt="สมาชิก Planchai Plus Club" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-purple-600 text-white text-xs font-black px-3 py-1 rounded-full shadow-md">
+              👑 สิทธิพิเศษสมาชิก
+            </span>
+            <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-lg">
+              Planchai Plus
+            </span>
+          </div>
+
+          <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-purple-600 mb-1">
+                <i class="fa-solid fa-id-card"></i> สะสมแต้ม & แลกรางวัล
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 leading-snug">
+                สมัครสมาชิกฟรี! รับแต้ม x3 ทุกวันพุธ + คูปอง 100.-
+              </h3>
+              <p class="text-xs text-slate-500 mt-1">
+                เพียงแจ้งเบอร์โทรศัพท์ตอนชำระเงิน สะสมแต้มแลกรับส่วนลดและของพรีเมียม
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-sm font-extrabold text-purple-700">สมัครฟรี ไม่มีค่าใช้จ่าย</span>
+              </div>
+              <button onclick="showMemberModal()" class="text-xs font-bold bg-purple-50 hover:bg-purple-600 text-purple-800 hover:text-white px-3.5 py-2 rounded-xl transition border border-purple-200">
+                <i class="fa-solid fa-user-plus mr-1"></i> สมัครสมาชิก
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promo 5: Night Owl Flash Deal (สาขา 24 ชม.) -->
+        <div class="promo-item discount bogo bg-white rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" 
+                 alt="Night Owl Deal เบเกอรี่ลดราคา" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-indigo-600 text-white text-xs font-black px-3 py-1 rounded-full shadow-md">
+              🌙 Night Owl Special (22:00-04:00)
+            </span>
+            <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-lg">
+              สาขา 1 (เปิด 24 ชม.)
+            </span>
+          </div>
+
+          <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-indigo-600 mb-1">
+                <i class="fa-solid fa-bread-slice"></i> เบเกอรี่สดใหม่
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 leading-snug">
+                ขนมปัง ครัวซองต์ และเบเกอรี่อบสด ลด 20% สำหรับคนนอนดึก
+              </h3>
+              <p class="text-xs text-slate-500 mt-1">
+                หิวดึกแวะมาได้เลย เบเกอรี่หอมกรุ่นอบใหม่ทุกวัน นุ่มอร่อยในราคาสบายกระเป๋า
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-xs text-slate-400 line-through">฿45.-</span>
+                <span class="text-xl font-extrabold text-indigo-600 ml-1">฿36.-</span>
+                <span class="text-[11px] text-slate-500">/ ชิ้น</span>
+              </div>
+              <button onclick="claimCoupon('เบเกอรี่รอบดึก ลด 20%')" class="text-xs font-bold bg-indigo-50 hover:bg-indigo-600 text-indigo-800 hover:text-white px-3.5 py-2 rounded-xl transition border border-indigo-200">
+                <i class="fa-solid fa-ticket mr-1"></i> รับคูปอง
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promo 6: Household Essentials -->
+        <div class="promo-item discount bg-white rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=700&q=80" 
+                 alt="ของใช้ประจำวันราคาพิเศษ" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-brand-600 text-white text-xs font-black px-3 py-1 rounded-full shadow-md">
+              🧺 ของใช้จำเป็นประจำบ้าน
+            </span>
+            <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-lg">
+              ทุกสาขา
+            </span>
+          </div>
+
+          <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-brand-600 mb-1">
+                <i class="fa-solid fa-pump-soap"></i> สินค้าอุปโภค
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 leading-snug">
+                น้ำยาซักผ้า & ปรับผ้านุ่ม แกลลอนประหยัด ลดทันที 40.-
+              </h3>
+              <p class="text-xs text-slate-500 mt-1">
+                หอมสะอาด คุ้มค่า จุใจ แพ็กใหญ่ใช้ได้นาน ช้อปตุนได้ครบครัน
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-xs text-slate-400 line-through">฿135.-</span>
+                <span class="text-xl font-extrabold text-brand-600 ml-1">฿95.-</span>
+                <span class="text-[11px] text-slate-500">/ แกลลอน</span>
+              </div>
+              <button onclick="claimCoupon('น้ำยาซักผ้าลด 40.-')" class="text-xs font-bold bg-brand-50 hover:bg-brand-600 text-brand-700 hover:text-white px-3.5 py-2 rounded-xl transition border border-brand-200">
+                <i class="fa-solid fa-ticket mr-1"></i> รับคูปอง
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: POPULAR PRODUCTS & SIMULATED CART ================= -->
+  <section id="products" class="py-20 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-200 text-brand-700 text-xs font-bold uppercase tracking-wider mb-2">
+            <i class="fa-solid fa-cart-shopping"></i> สินค้าขายดีประจำร้าน
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            สินค้าแนะนำยอดนิยม
+          </h2>
+          <p class="mt-2 text-slate-600">กดสั่งซื้อใส่ตะกร้า พร้อมบริการจัดส่งด่วน หรือเลือกรับที่สาขา</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-xs text-slate-500">คลิกที่สินค้าเพื่อหยิบใส่ตะกร้า &rarr;</span>
+          <button onclick="openCart()" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-xl shadow-sm transition">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span>เปิดตะกร้าสินค้า (<span id="cart-btn-text-count">0</span>)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        
+        <!-- Product 1 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-3 sm:p-4 flex flex-col justify-between hover:shadow-lg hover:border-brand-300 transition">
+          <div class="relative rounded-xl overflow-hidden mb-3 aspect-square bg-white">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&q=80" alt="กาแฟสดอเมริกาโน่เย็น" class="w-full h-full object-cover">
+            <span class="absolute top-2 left-2 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Fresh Cafe</span>
+          </div>
+          <div>
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900 line-clamp-1">กาแฟสด อเมริกาโน่เย็น พรีเมียม</h4>
+            <p class="text-[11px] text-slate-500 line-clamp-1">เมล็ดกาแฟคั่วบดสด หอมเข้ม เต็มรส</p>
+            <div class="mt-2 flex items-baseline gap-1.5">
+              <span class="text-sm sm:text-base font-extrabold text-brand-600">฿45</span>
+              <span class="text-[11px] text-slate-400 line-through">฿55</span>
+            </div>
+          </div>
+          <button onclick="addToCart('กาแฟสด อเมริกาโน่เย็น', 45, 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&q=80')" class="mt-3 w-full py-2 rounded-xl bg-white border border-brand-500 text-brand-700 hover:bg-brand-600 hover:text-white text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-plus"></i> ใส่ตะกร้า
+          </button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-3 sm:p-4 flex flex-col justify-between hover:shadow-lg hover:border-brand-300 transition">
+          <div class="relative rounded-xl overflow-hidden mb-3 aspect-square bg-white">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80" alt="เบอร์เกอร์ไก่สไปซี่" class="w-full h-full object-cover">
+            <span class="absolute top-2 left-2 bg-rose-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">ฮิต</span>
+          </div>
+          <div>
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900 line-clamp-1">เบอร์เกอร์ไก่กรอบ สไปซี่ชีส</h4>
+            <p class="text-[11px] text-slate-500 line-clamp-1">ไก่ทอดกรอบซอสเข้มข้น ชีสเยิ้ม</p>
+            <div class="mt-2 flex items-baseline gap-1.5">
+              <span class="text-sm sm:text-base font-extrabold text-brand-600">฿39</span>
+              <span class="text-[11px] text-slate-400 line-through">฿49</span>
+            </div>
+          </div>
+          <button onclick="addToCart('เบอร์เกอร์ไก่กรอบ สไปซี่ชีส', 39, 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80')" class="mt-3 w-full py-2 rounded-xl bg-white border border-brand-500 text-brand-700 hover:bg-brand-600 hover:text-white text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-plus"></i> ใส่ตะกร้า
+          </button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-3 sm:p-4 flex flex-col justify-between hover:shadow-lg hover:border-brand-300 transition">
+          <div class="relative rounded-xl overflow-hidden mb-3 aspect-square bg-white">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=400&q=80" alt="แซนด์วิชอบร้อน" class="w-full h-full object-cover">
+            <span class="absolute top-2 left-2 bg-amber-500 text-slate-900 text-[10px] font-bold px-2 py-0.5 rounded">อบร้อน</span>
+          </div>
+          <div>
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900 line-clamp-1">แซนด์วิชอบร้อน แฮมชีสลาวา</h4>
+            <p class="text-[11px] text-slate-500 line-clamp-1">อบร้อน กรอบนอกนุ่มใน</p>
+            <div class="mt-2 flex items-baseline gap-1.5">
+              <span class="text-sm sm:text-base font-extrabold text-brand-600">฿29</span>
+              <span class="text-[11px] text-slate-400 line-through">฿35</span>
+            </div>
+          </div>
+          <button onclick="addToCart('แซนด์วิชอบร้อน แฮมชีส', 29, 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=400&q=80')" class="mt-3 w-full py-2 rounded-xl bg-white border border-brand-500 text-brand-700 hover:bg-brand-600 hover:text-white text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-plus"></i> ใส่ตะกร้า
+          </button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-3 sm:p-4 flex flex-col justify-between hover:shadow-lg hover:border-brand-300 transition">
+          <div class="relative rounded-xl overflow-hidden mb-3 aspect-square bg-white">
+            <img src="https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&w=400&q=80" alt="ครัวซองต์เนยสดฝรั่งเศส" class="w-full h-full object-cover">
+            <span class="absolute top-2 left-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">Bakery</span>
+          </div>
+          <div>
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900 line-clamp-1">ครัวซองต์เนยสดฝรั่งเศส อบใหม่</h4>
+            <p class="text-[11px] text-slate-500 line-clamp-1">หอมเนยแท้ แป้งฟูกรอบ</p>
+            <div class="mt-2 flex items-baseline gap-1.5">
+              <span class="text-sm sm:text-base font-extrabold text-brand-600">฿35</span>
+              <span class="text-[11px] text-slate-400 line-through">฿42</span>
+            </div>
+          </div>
+          <button onclick="addToCart('ครัวซองต์เนยสดฝรั่งเศส', 35, 'https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&w=400&q=80')" class="mt-3 w-full py-2 rounded-xl bg-white border border-brand-500 text-brand-700 hover:bg-brand-600 hover:text-white text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-plus"></i> ใส่ตะกร้า
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: CONVENIENT SERVICES ================= -->
+  <section id="services" class="py-20 bg-slate-50 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider mb-3">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> บริการครบวงจร
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          มากกว่าร้านสะดวกซื้อ บริการครบจบที่เดียว
+        </h2>
+        <p class="mt-2 text-slate-600 text-sm sm:text-base">
+          เราออกแบบการให้บริการเพื่อตอบโจทย์ชีวิตประจำวันของชาวร้อยเอ็ดอย่างแท้จริง
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Service 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-brand-400 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-motorcycle"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base mb-1">เดลิเวอรีส่งถึงบ้าน</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            สั่งสินค้าผ่าน LINE หรือโทรสั่งตรงถึงสาขา ส่งรวดเร็วในรัศมี 10 กม. ภายใน 30 นาที
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-brand-400 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-box-open"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base mb-1">จุดรับ-ส่งพัสดุด่วน</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            บริการจุด Drop-off พัสดุ Flash Express และ Kerry สะดวก ไม่ต้องต่อคิวนาน
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-brand-400 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-qrcode"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base mb-1">จ่ายสะดวกทุกรูปแบบ</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            รองรับทั้งเงินสด สแกน PromptPay, TrueMoney Wallet, บัตรเครดิต Visa/Mastercard ทุกธนาคาร
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-brand-400 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-charging-station"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base mb-1">EV Charger & Wi-Fi ฟรี</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            จุดชาร์จรถยนต์ไฟฟ้า EV ที่สาขาบายพาส พร้อม Free Hi-Speed Wi-Fi สำหรับลูกค้านั่งพักผ่อน
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: CONTACT CHANNELS (ช่องทางการติดต่อ) ================= -->
+  <section id="contact" class="py-20 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-200 text-brand-700 text-xs font-bold uppercase tracking-wider mb-3">
+          <i class="fa-solid fa-headset"></i> พร้อมให้บริการและตอบคำถาม 24 ชม.
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          ช่องทางการติดต่อ พลาญชัย มินิมาร์ท
+        </h2>
+        <p class="mt-2 text-slate-600 text-sm sm:text-base">
+          สอบถามข้อมูลโปรโมชัน สั่งซื้อสินค้า สอบถามเส้นทางสาขา หรือเสนอแนะบริการ ติดต่อเราได้ทุกช่องทาง
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Contact Cards (Left Side) -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <!-- Phone Card -->
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:bg-brand-50/30 transition flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl shrink-0 shadow-md shadow-brand-600/30">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="flex-1">
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base">โทรศัพท์สายด่วน (Call Center)</h4>
+              <p class="text-xs text-slate-500 mb-2">สอบถามข้อมูลและสั่งสินค้าได้ทันที</p>
+              <div class="space-y-1 text-sm font-bold text-brand-700">
+                <p>• สาขา 1 (พลาญชัย 24 ชม.): <a href="tel:043512888" class="hover:underline">043-512-888</a>, <a href="tel:0891112233" class="hover:underline">089-111-2233</a></p>
+                <p>• สาขา 2 (บายพาส): <a href="tel:043514999" class="hover:underline">043-514-999</a>, <a href="tel:0892223344" class="hover:underline">089-222-3344</a></p>
+                <p>• สาขา 3 (บึงพลาญชัย): <a href="tel:043516777" class="hover:underline">043-516-777</a>, <a href="tel:0893334455" class="hover:underline">089-333-4455</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LINE Official Card -->
+          <div class="bg-[#06C755]/10 border border-[#06C755]/30 rounded-2xl p-5 hover:bg-[#06C755]/15 transition flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-[#06C755] text-white flex items-center justify-center text-2xl shrink-0 shadow-md">
+              <i class="fa-brands fa-line"></i>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">LINE Official Account</h4>
+                <span class="text-[10px] font-bold bg-[#06C755] text-white px-2 py-0.5 rounded-full">แนะนำ</span>
+              </div>
+              <p class="text-xs text-slate-600 mt-0.5">LINE ID: <strong class="text-slate-900 font-mono text-sm">@planchaimart</strong></p>
+              <p class="text-xs text-slate-500 mt-1">รับคูปองส่วนลดพิเศษ สั่งซื้อสินค้า และสอบถามแอดมินตลอด 24 ชม.</p>
+              <div class="mt-3 flex items-center gap-2">
+                <button onclick="showLineQRModal()" class="text-xs font-bold bg-[#06C755] hover:bg-[#05b34c] text-white px-3.5 py-1.5 rounded-xl transition shadow-sm flex items-center gap-1.5">
+                  <i class="fa-solid fa-qrcode"></i> สแกน QR Code
+                </button>
+                <a href="https://line.me" target="_blank" class="text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-200 px-3.5 py-1.5 rounded-xl transition">
+                  เพิ่มเพื่อนเลย
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Grid -->
+          <div class="grid grid-cols-2 gap-3">
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" class="bg-slate-50 border border-slate-200 rounded-2xl p-3.5 hover:border-blue-500 hover:bg-blue-50/40 transition flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center text-lg shrink-0">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="overflow-hidden">
+                <p class="text-xs text-slate-400 font-medium">Facebook Page</p>
+                <p class="text-xs font-bold text-slate-800 truncate">Planchai Mini Mart</p>
+              </div>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" class="bg-slate-50 border border-slate-200 rounded-2xl p-3.5 hover:border-pink-500 hover:bg-pink-50/40 transition flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white flex items-center justify-center text-lg shrink-0">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="overflow-hidden">
+                <p class="text-xs text-slate-400 font-medium">Instagram</p>
+                <p class="text-xs font-bold text-slate-800 truncate">@planchai_mart</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Email & Corporate -->
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-slate-800 text-white flex items-center justify-center text-base shrink-0">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-400 font-medium">อีเมลติดต่อฝ่ายประสานงาน / ร้องเรียน</p>
+              <a href="mailto:contact@planchaiminimart.com" class="text-xs sm:text-sm font-bold text-slate-800 hover:text-brand-600 transition">
+                contact@planchaiminimart.com
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Contact Form (Right Side) -->
+        <div class="lg:col-span-7 bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
+          <div class="mb-6">
+            <h3 class="text-xl font-bold text-slate-900">ส่งข้อความติดต่อ หรือแจ้งคำถาม / ข้อเสนอแนะ</h3>
+            <p class="text-xs text-slate-500 mt-1">กรอกข้อมูลด้านล่าง ทีมงานพลาญชัย มินิมาร์ท จะติดต่อกลับอย่างรวดเร็ว</p>
+          </div>
+
+          <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="block text-xs font-bold text-slate-700 uppercase mb-1">ชื่อ - นามสกุล <span class="text-rose-500">*</span></label>
+                <input type="text" id="name" required placeholder="เช่น สมชาย ใจดี" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition">
+              </div>
+
+              <div>
+                <label for="phone" class="block text-xs font-bold text-slate-700 uppercase mb-1">เบอร์โทรศัพท์ติดต่อ <span class="text-rose-500">*</span></label>
+                <input type="tel" id="phone" required placeholder="08x-xxx-xxxx" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="email" class="block text-xs font-bold text-slate-700 uppercase mb-1">อีเมล</label>
+                <input type="email" id="email" placeholder="example@email.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition">
+              </div>
+
+              <div>
+                <label for="branch-select" class="block text-xs font-bold text-slate-700 uppercase mb-1">สาขาที่ต้องการติดต่อ</label>
+                <select id="branch-select" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition font-medium">
+                  <option value="branch1">สาขา 1: หน้าวิทยาลัยเทคโนโลยีพลาญชัย (24 ชม.)</option>
+                  <option value="branch2">สาขา 2: บายพาส - โรบินสัน ร้อยเอ็ด (06:00-24:00)</option>
+                  <option value="branch3">สาขา 3: บึงพลาญชัย แลนด์มาร์ก (05:00-23:00)</option>
+                  <option value="general">ทุกสาขา / สำนักงานใหญ่</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="topic" class="block text-xs font-bold text-slate-700 uppercase mb-1">เรื่องที่ต้องการติดต่อ</label>
+              <select id="topic" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition font-medium">
+                <option value="order">สั่งซื้อสินค้า / เดลิเวอรี</option>
+                <option value="promo">สอบถามโปรโมชัน / คูปอง</option>
+                <option value="member">สอบถามแต้มสมาชิก Planchai Plus</option>
+                <option value="feedback">ติชมบริการ / ข้อเสนอแนะ</option>
+                <option value="partner">เสนอสินค้าวางจำหน่าย / ร่วมธุรกิจ</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="block text-xs font-bold text-slate-700 uppercase mb-1">ข้อความรายละเอียด <span class="text-rose-500">*</span></label>
+              <textarea id="message" rows="3" required placeholder="ระบุรายละเอียดที่คุณต้องการให้เราดูแล..." class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition"></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn" class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white font-bold text-sm shadow-md shadow-brand-600/30 hover:shadow-lg transition transform active:scale-98 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>ส่งข้อความติดต่อทันที</span>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-900 text-slate-400 text-xs pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-slate-800">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white text-lg">
+              <i class="fa-solid fa-basket-shopping text-accent-400"></i>
+            </div>
+            <div>
+              <span class="text-xl font-extrabold text-white tracking-tight">PLANCHAI <span class="text-brand-500">MART</span></span>
+              <p class="text-[11px] text-slate-400">พลาญชัย มินิมาร์ท ร้อยเอ็ด</p>
+            </div>
+          </div>
+
+          <p class="text-xs text-slate-400 leading-relaxed pr-6">
+            ร้านสะดวกซื้อมินิมาร์ทชั้นนำของเมืองร้อยเอ็ด คัดสรรสินค้าคุณภาพ สดใหม่ สะอาด ราคาประหยัด พร้อมให้บริการ 3 สาขาตลอด 24 ชั่วโมง และบริการจัดส่งด่วนถึงหน้าบ้านคุณ
+          </p>
+
+          <div class="flex items-center gap-2.5 pt-2">
+            <a href="https://facebook.com" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-blue-600 text-slate-300 hover:text-white flex items-center justify-center transition">
+              <i class="fa-brands fa-facebook-f text-xs"></i>
+            </a>
+            <a href="https://line.me" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-[#06C755] text-slate-300 hover:text-white flex items-center justify-center transition">
+              <i class="fa-brands fa-line text-sm"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-rose-600 text-slate-300 hover:text-white flex items-center justify-center transition">
+              <i class="fa-brands fa-instagram text-xs"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition">
+              <i class="fa-brands fa-tiktok text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">เมนูลัด</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#home" class="hover:text-white transition">หน้าแรก</a></li>
+            <li><a href="#branches" class="hover:text-white transition">ที่อยู่ 3 สาขา</a></li>
+            <li><a href="#branches" class="hover:text-white transition">เวลาเปิด - ปิด บริการ</a></li>
+            <li><a href="#promotions" class="hover:text-white transition">โปรโมชัน & Flash Sale</a></li>
+            <li><a href="#products" class="hover:text-white transition">สินค้ายอดนิยม</a></li>
+            <li><a href="#contact" class="hover:text-white transition">ติดต่อเรา</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: 3 Branches Summary -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">3 สาขาในร้อยเอ็ด</h4>
+          <ul class="space-y-2 text-xs">
+            <li>
+              <strong class="text-white block">สาขา 1: หน้า วท.พลาญชัย</strong>
+              <span class="text-emerald-400 font-semibold">เปิด 24 ชม. ทุกวัน</span>
+            </li>
+            <li>
+              <strong class="text-white block">สาขา 2: บายพาส - โรบินสัน</strong>
+              <span class="text-slate-300">เปิด 06:00 - 24:00 น.</span>
+            </li>
+            <li>
+              <strong class="text-white block">สาขา 3: บึงพลาญชัย แลนด์มาร์ก</strong>
+              <span class="text-slate-300">เปิด 05:00 - 23:00 น.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Hours -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">ศูนย์บริการลูกค้า</h4>
+          <p class="text-xs">
+            โทร: <a href="tel:043512888" class="text-white font-bold hover:underline">043-512-888</a><br>
+            มือถือ: <a href="tel:0891112233" class="text-white font-bold hover:underline">089-111-2233</a>
+          </p>
+          <p class="text-xs">
+            LINE: <span class="text-brand-400 font-bold font-mono">@planchaimart</span>
+          </p>
+          <p class="text-xs">
+            Email: <span class="text-slate-300">contact@planchaiminimart.com</span>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Project Credit -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+        <p>© 2026 PLANCHAI MINI MART (พลาญชัย มินิมาร์ท). All rights reserved.</p>
+        <p class="flex items-center gap-2">
+          <span>Student Project: <strong>6832040017</strong></span>
+          <span>•</span>
+          <span>วิทยาลัยเทคโนโลยีพณิชยการพลาญชัยร้อยเอ็ด</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING CART DRAWER MODAL ================= -->
+  <div id="cart-drawer-overlay" onclick="closeCart()" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  
+  <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
+    <!-- Cart Header -->
+    <div class="p-5 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900 text-base">ตะกร้าสินค้าของคุณ</h3>
+          <p class="text-xs text-slate-500">พลาญชัย มินิมาร์ท เดลิเวอรี</p>
+        </div>
+      </div>
+      <button onclick="closeCart()" class="w-8 h-8 rounded-lg bg-slate-200 hover:bg-slate-300 text-slate-700 flex items-center justify-center transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Cart Item List -->
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-5 space-y-3">
+      <!-- Dynamic cart items will render here -->
+      <div id="cart-empty-state" class="text-center py-12 text-slate-400 space-y-3">
+        <i class="fa-solid fa-cart-arrow-down text-5xl text-slate-300"></i>
+        <p class="text-sm font-medium">ยังไม่มีสินค้าในตะกร้า</p>
+        <p class="text-xs">เลือกสินค้าที่ชอบแล้วกด "ใส่ตะกร้า" ได้เลย</p>
+      </div>
+    </div>
+
+    <!-- Cart Footer & Summary -->
+    <div class="p-5 border-t border-slate-200 bg-slate-50 space-y-3">
+      <div class="space-y-1.5 text-xs">
+        <div class="flex justify-between text-slate-600">
+          <span>ราคารวมสินค้า</span>
+          <span id="cart-subtotal" class="font-bold text-slate-900">฿0</span>
+        </div>
+        <div class="flex justify-between text-slate-600">
+          <span>ค่าจัดส่ง (ในเมืองร้อยเอ็ด)</span>
+          <span id="cart-shipping" class="font-semibold text-emerald-600">ฟรี (โปรโมชัน)</span>
+        </div>
+        <div class="flex justify-between text-sm font-extrabold text-slate-900 pt-2 border-t border-slate-200">
+          <span>ยอดสุทธิ</span>
+          <span id="cart-total" class="text-lg text-brand-600">฿0</span>
+        </div>
+      </div>
+
+      <button onclick="checkoutCart()" class="w-full py-3.5 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-lg shadow-brand-600/30 transition flex items-center justify-center gap-2">
+        <i class="fa-solid fa-check"></i>
+        <span>ดำเนินการสั่งซื้อสินค้า (เดลิเวอรี)</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= LINE QR CODE MODAL ================= -->
+  <div id="qr-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-sm w-full p-6 text-center space-y-4 shadow-2xl relative animate-scaleIn">
+      <button onclick="closeLineQRModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <div class="w-14 h-14 rounded-2xl bg-[#06C755] text-white flex items-center justify-center text-3xl mx-auto shadow-md">
+        <i class="fa-brands fa-line"></i>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold text-slate-900">แอดไลน์ พลาญชัย มินิมาร์ท</h3>
+        <p class="text-xs text-slate-500">สแกน QR Code ด้านล่าง หรือค้นหา ID: <strong class="text-[#06C755]">@planchaimart</strong></p>
+      </div>
+
+      <!-- QR Code SVG Representation -->
+      <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 inline-block shadow-inner">
+        <svg class="w-48 h-48 mx-auto" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer border -->
+          <rect width="100" height="100" rx="8" fill="white"/>
+          <!-- Corner Marker Top-Left -->
+          <rect x="10" y="10" width="24" height="24" rx="4" fill="#0f172a"/>
+          <rect x="14" y="14" width="16" height="16" rx="2" fill="white"/>
+          <rect x="18" y="18" width="8" height="8" rx="1" fill="#06C755"/>
+          <!-- Corner Marker Top-Right -->
+          <rect x="66" y="10" width="24" height="24" rx="4" fill="#0f172a"/>
+          <rect x="70" y="14" width="16" height="16" rx="2" fill="white"/>
+          <rect x="74" y="18" width="8" height="8" rx="1" fill="#06C755"/>
+          <!-- Corner Marker Bottom-Left -->
+          <rect x="10" y="66" width="24" height="24" rx="4" fill="#0f172a"/>
+          <rect x="14" y="70" width="16" height="16" rx="2" fill="white"/>
+          <rect x="18" y="74" width="8" height="8" rx="1" fill="#06C755"/>
+          <!-- Center Logo Element -->
+          <circle cx="50" cy="50" r="10" fill="#06C755"/>
+          <text x="50" y="54" font-size="9" font-weight="bold" fill="white" text-anchor="middle">MART</text>
+          <!-- Simulated Pattern Bits -->
+          <rect x="40" y="12" width="6" height="6" fill="#0f172a"/>
+          <rect x="52" y="14" width="6" height="6" fill="#0f172a"/>
+          <rect x="42" y="24" width="8" height="6" fill="#0f172a"/>
+          <rect x="12" y="42" width="6" height="8" fill="#0f172a"/>
+          <rect x="24" y="44" width="8" height="6" fill="#0f172a"/>
+          <rect x="70" y="42" width="6" height="6" fill="#0f172a"/>
+          <rect x="80" y="46" width="6" height="8" fill="#0f172a"/>
+          <rect x="40" y="66" width="6" height="8" fill="#0f172a"/>
+          <rect x="52" y="72" width="8" height="6" fill="#0f172a"/>
+          <rect x="68" y="68" width="6" height="6" fill="#0f172a"/>
+          <rect x="78" y="78" width="8" height="8" fill="#0f172a"/>
+        </svg>
+      </div>
+
+      <div class="pt-2">
+        <a href="https://line.me" target="_blank" class="w-full py-2.5 rounded-xl bg-[#06C755] hover:bg-[#05b34c] text-white font-bold text-xs flex items-center justify-center gap-2 transition">
+          <i class="fa-brands fa-line text-base"></i>
+          <span>เปิดใน LINE ตอนนี้</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TOAST NOTIFICATION CONTAINER ================= -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    // ---------- 1. Real-time Digital Clock & Live Branch Status ----------
+    function updateClockAndBranchStatus() {
+      const now = new Date();
+      
+      // Update header clock
+      const timeStr = now.toLocaleTimeString('th-TH', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+      const clockEl = document.getElementById('current-clock');
+      if (clockEl) clockEl.textContent = timeStr + ' น.';
+
+      const currentHour = now.getHours();
+      const currentMinute = now.getMinutes();
+      const currentTotalMin = currentHour * 60 + currentMinute;
+
+      // Branch 2: 06:00 (360) - 24:00 (1440) -> Opens 06:00 to 24:00
+      const b2Open = currentTotalMin >= 360 && currentTotalMin < 1440;
+      const b2Indicator = document.getElementById('branch2-live-indicator');
+      const b2Text = document.getElementById('branch2-live-text');
+      const b2Badge = document.getElementById('badge-branch-2');
+
+      if (b2Indicator && b2Text) {
+        if (b2Open) {
+          b2Indicator.className = "w-2.5 h-2.5 rounded-full bg-emerald-400";
+          b2Text.textContent = "เปิดบริการ (06:00-24:00)";
+          b2Text.className = "text-emerald-400";
+        } else {
+          b2Indicator.className = "w-2.5 h-2.5 rounded-full bg-rose-400";
+          b2Text.textContent = "ปิดบริการ (เปิด 06:00)";
+          b2Text.className = "text-rose-400";
+        }
+      }
+      if (b2Badge) {
+        if (b2Open) {
+          b2Badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> กำลังเปิดบริการ';
+          b2Badge.className = 'inline-flex items-center gap-1 text-[11px] font-bold text-blue-700 bg-white px-2 py-0.5 rounded-full border border-blue-300';
+        } else {
+          b2Badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span> ปิดบริการชั่วคราว (เปิด 06:00)';
+          b2Badge.className = 'inline-flex items-center gap-1 text-[11px] font-bold text-rose-700 bg-white px-2 py-0.5 rounded-full border border-rose-300';
+        }
+      }
+
+      // Branch 3: 05:00 (300) - 23:00 (1380)
+      const b3Open = currentTotalMin >= 300 && currentTotalMin < 1380;
+      const b3Indicator = document.getElementById('branch3-live-indicator');
+      const b3Text = document.getElementById('branch3-live-text');
+      const b3Badge = document.getElementById('badge-branch-3');
+
+      if (b3Indicator && b3Text) {
+        if (b3Open) {
+          b3Indicator.className = "w-2.5 h-2.5 rounded-full bg-emerald-400";
+          b3Text.textContent = "เปิดบริการ (05:00-23:00)";
+          b3Text.className = "text-emerald-400";
+        } else {
+          b3Indicator.className = "w-2.5 h-2.5 rounded-full bg-rose-400";
+          b3Text.textContent = "ปิดบริการ (เปิด 05:00)";
+          b3Text.className = "text-rose-400";
+        }
+      }
+      if (b3Badge) {
+        if (b3Open) {
+          b3Badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> กำลังเปิดบริการ';
+          b3Badge.className = 'inline-flex items-center gap-1 text-[11px] font-bold text-amber-800 bg-white px-2 py-0.5 rounded-full border border-amber-300';
+        } else {
+          b3Badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span> ปิดบริการชั่วคราว (เปิด 05:00)';
+          b3Badge.className = 'inline-flex items-center gap-1 text-[11px] font-bold text-rose-700 bg-white px-2 py-0.5 rounded-full border border-rose-300';
+        }
+      }
+    }
+    setInterval(updateClockAndBranchStatus, 1000);
+    updateClockAndBranchStatus();
+
+    // ---------- 2. Countdown Timer for Promotions ----------
+    function updateCountdown() {
+      const now = new Date();
+      // Next Sunday midnight
+      const target = new Date();
+      target.setDate(now.getDate() + ((7 - now.getDay()) % 7 || 7));
+      target.setHours(23, 59, 59, 999);
+
+      const diff = target - now;
+      if (diff > 0) {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const mins = Math.floor((diff / 1000 / 60) % 60);
+        const secs = Math.floor((diff / 1000) % 60);
+
+        document.getElementById('countdown-days').textContent = String(days).padStart(2, '0');
+        document.getElementById('countdown-hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('countdown-mins').textContent = String(mins).padStart(2, '0');
+        document.getElementById('countdown-secs').textContent = String(secs).padStart(2, '0');
+      }
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // ---------- 3. Mobile Menu Toggle ----------
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.className = 'fa-solid fa-bars text-lg';
+      } else {
+        menuIcon.className = 'fa-solid fa-xmark text-lg';
+      }
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.className = 'fa-solid fa-bars text-lg';
+      });
+    });
+
+    // ---------- 4. Promotion Category Filter ----------
+    function filterPromos(category) {
+      const items = document.querySelectorAll('.promo-item');
+      const tabs = document.querySelectorAll('.promo-tab-btn');
+
+      tabs.forEach(tab => {
+        tab.classList.remove('active', 'bg-brand-600', 'text-white');
+        tab.classList.add('bg-white', 'text-slate-700');
+      });
+      event.target.classList.add('active', 'bg-brand-600', 'text-white');
+      event.target.classList.remove('bg-white', 'text-slate-700');
+
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // ---------- 5. Shopping Cart Simulation ----------
+    let cart = [];
+
+    function addToCart(title, price, image) {
+      const existing = cart.find(item => item.title === title);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ title, price, image, qty: 1 });
+      }
+      updateCartUI();
+      showToast(`🛒 เพิ่ม "${title}" ลงในตะกร้าแล้ว!`, 'success');
+    }
+
+    function changeQty(index, delta) {
+      if (!cart[index]) return;
+      cart[index].qty += delta;
+      if (cart[index].qty <= 0) {
+        cart.splice(index, 1);
+      }
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const countBadge = document.getElementById('cart-count-badge');
+      const btnTextCount = document.getElementById('cart-btn-text-count');
+      const container = document.getElementById('cart-items-container');
+      const emptyState = document.getElementById('cart-empty-state');
+      const subtotalEl = document.getElementById('cart-subtotal');
+      const totalEl = document.getElementById('cart-total');
+
+      const totalItems = cart.reduce((acc, cur) => acc + cur.qty, 0);
+      countBadge.textContent = totalItems;
+      btnTextCount.textContent = totalItems;
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div id="cart-empty-state" class="text-center py-12 text-slate-400 space-y-3">
+            <i class="fa-solid fa-cart-arrow-down text-5xl text-slate-300"></i>
+            <p class="text-sm font-medium">ยังไม่มีสินค้าในตะกร้า</p>
+            <p class="text-xs">เลือกสินค้าที่ชอบแล้วกด "ใส่ตะกร้า" ได้เลย</p>
+          </div>
+        `;
+        subtotalEl.textContent = '฿0';
+        totalEl.textContent = '฿0';
+        return;
+      }
+
+      let subtotal = 0;
+      let html = '';
+
+      cart.forEach((item, index) => {
+        const itemTotal = item.price * item.qty;
+        subtotal += itemTotal;
+        html += `
+          <div class="flex items-center gap-3 p-3 bg-slate-50 border border-slate-200 rounded-2xl">
+            <img src="${item.image}" alt="${item.title}" class="w-14 h-14 object-cover rounded-xl border border-slate-200">
+            <div class="flex-1 min-w-0">
+              <h5 class="text-xs font-bold text-slate-900 truncate">${item.title}</h5>
+              <p class="text-xs font-extrabold text-brand-600">฿${item.price} <span class="text-[10px] text-slate-400 font-normal">/ ชิ้น</span></p>
+              
+              <div class="flex items-center gap-2 mt-1">
+                <button onclick="changeQty(${index}, -1)" class="w-6 h-6 rounded-md bg-white border border-slate-300 text-slate-700 flex items-center justify-center hover:bg-slate-200 text-xs">-</button>
+                <span class="text-xs font-bold w-4 text-center">${item.qty}</span>
+                <button onclick="changeQty(${index}, 1)" class="w-6 h-6 rounded-md bg-white border border-slate-300 text-slate-700 flex items-center justify-center hover:bg-slate-200 text-xs">+</button>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-sm font-black text-slate-900">฿${itemTotal}</span>
+              <button onclick="changeQty(${index}, -${item.qty})" class="block text-[11px] text-rose-500 hover:underline mt-1">ลบ</button>
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+      subtotalEl.textContent = `฿${subtotal}`;
+      totalEl.textContent = `฿${subtotal}`;
+    }
+
+    function openCart() {
+      const overlay = document.getElementById('cart-drawer-overlay');
+      const drawer = document.getElementById('cart-drawer');
+      overlay.classList.remove('hidden');
+      setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+      drawer.classList.remove('translate-x-full');
+    }
+
+    function closeCart() {
+      const overlay = document.getElementById('cart-drawer-overlay');
+      const drawer = document.getElementById('cart-drawer');
+      overlay.classList.add('opacity-0');
+      drawer.classList.add('translate-x-full');
+      setTimeout(() => overlay.classList.add('hidden'), 300);
+    }
+
+    document.getElementById('open-cart-btn').addEventListener('click', openCart);
+
+    function checkoutCart() {
+      if (cart.length === 0) {
+        showToast('กรุณาเลือกสินค้าใส่ตะกร้าก่อนดำเนินการ', 'info');
+        return;
+      }
+      const total = cart.reduce((acc, cur) => acc + (cur.price * cur.qty), 0);
+      alert(`🎉 ขอบคุณสำหรับการสั่งซื้อสินค้ากับ พลาญชัย มินิมาร์ท!\n\nยอดรวมชำระ: ฿${total} บาท\nพนักงานสาขาใกล้บ้านจะติดต่อยืนยันออเดอร์และจัดส่งด่วนถึงคุณใน 30 นาที 🛵`);
+      cart = [];
+      updateCartUI();
+      closeCart();
+      showToast('✅ สั่งซื้อเรียบร้อยแล้ว ทีมงานกำลังเตรียมของจัดส่ง!', 'success');
+    }
+
+    // ---------- 6. Toast Notifications & Helpers ----------
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      
+      let bg = 'bg-slate-900 text-white border-slate-700';
+      if (type === 'success') bg = 'bg-emerald-800 text-white border-emerald-600';
+      if (type === 'info') bg = 'bg-blue-800 text-white border-blue-600';
+
+      toast.className = `${bg} pointer-events-auto flex items-center gap-3 px-4 py-3 rounded-2xl shadow-2xl border text-xs sm:text-sm font-semibold transform transition-all duration-300 translate-y-6 opacity-0`;
+      toast.innerHTML = `
+        <span>${message}</span>
+      `;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-6', 'opacity-0');
+      }, 10);
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-6', 'opacity-0');
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+
+    function copyAddress(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('📋 คัดลอกที่อยู่สาขาเรียบร้อยแล้ว!', 'success');
+      }).catch(() => {
+        showToast('คัดลอก: ' + text, 'info');
+      });
+    }
+
+    function claimCoupon(title) {
+      showToast(`🎟️ เก็บโค้ดส่วนลด "${title}" สำเร็จ! สามารถใช้ได้ทั้ง 3 สาขา`, 'success');
+    }
+
+    function showMemberModal() {
+      const tel = prompt('กรุณากรอกเบอร์โทรศัพท์เพื่อสมัครสมาชิก Planchai Plus ฟรี:');
+      if (tel && tel.trim().length >= 9) {
+        showToast(`👑 ยินดีต้อนรับสมาชิกใหม่เบอร์ ${tel}! รับคะแนน 100 แต้มเรียบร้อย`, 'success');
+      }
+    }
+
+    function showLineQRModal() {
+      document.getElementById('qr-modal').classList.remove('hidden');
+    }
+    function closeLineQRModal() {
+      document.getElementById('qr-modal').classList.add('hidden');
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submit-btn');
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> กำลังส่งข้อความ...';
+
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> <span>ส่งข้อความติดต่อทันที</span>';
+        alert(`ขอบคุณคุณ ${name} (${phone})!\nข้อความของคุณถูกส่งไปยังผู้จัดการสาขา พลาญชัย มินิมาร์ท เรียบร้อยแล้ว ทีมงานจะโทรติดต่อกลับโดยเร็วที่สุดครับ 🙏`);
+        document.getElementById('contact-form').reset();
+        showToast('📬 ส่งข้อความสำเร็จเรียบร้อย!', 'success');
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
